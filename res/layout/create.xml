@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/textView1"
+		android:text="Texto en español de personas mentalmente estables:" />
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:inputType="textMultiLine"
+		android:hint="Español"
+		android:lines="3"
+		android:id="@+id/create_edit_esp"
+	>
+		<requestFocus />
+	</EditText>
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+	>
+		<Button
+			android:text="Traducir"
+			android:id="@+id/create_bt_traducir"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Limpiar"
+			android:id="@+id/create_bt_limpiar"
+		></Button>
+	</LinearLayout>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/textView2"
+		android:text="Texto en HOYGAN" />
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:inputType="textMultiLine"
+		android:hint="HOYGAN"
+		android:lines="3"
+		android:id="@+id/create_edit_hoygan" />
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal|top"
+	>
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Copiar al portapapeles"
+			android:id="@+id/create_bt_copiar"
+		></Button>
+		<Button
+			android:text="Compartir"
+			android:id="@+id/create_bt_compartir"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableRight="@android:drawable/ic_menu_share"
+		></Button>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/create_layout_progress"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:gravity="center_vertical"
+		android:visibility="invisible"
+	>
+		<ProgressBar
+			android:id="@+id/progressBar2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		></ProgressBar>
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:id="@+id/textView3"
+			android:text="TRADUSIENDO..."
+		></TextView>
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Canselar"
+			android:id="@+id/create_bt_canselar"
+		></Button>
+	</LinearLayout>
+
+</LinearLayout>
